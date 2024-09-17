@@ -75,7 +75,7 @@ if criminal_id.lower() == 'id not available':
         context.user_data['criminal_id'] = criminal_id
         update.message.reply_text("Criminal ID not available! Now send me the group username or link.")
         return GROUP
-    elif criminal_id.isdigit():
+elif criminal_id.isdigit():
         context.user_data['criminal_id'] = criminal_id
         update.message.reply_text("Criminal ID accepted! Now send me the group username or link.")
         return GROUP
