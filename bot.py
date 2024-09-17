@@ -12,7 +12,7 @@ warnings.filterwarnings("ignore", message="python-telegram-bot is using upstream
 # Replace these with your bot's details
 BOT_NAME = "ᴡᴏᴍᴇɴ ꜱᴀꜰᴇᴛʏ ʙᴏᴛ"  # Replace with your bot's name
 OWNER_ID = 6713994904  # Replace with your owner's user ID
-BOT_USERNAME = "@Women_safety_Gbot"  # Replace with your bot's username
+BOT_USERNAME = "@IndiGptBot"  # Replace with your bot's username
 SUPPORT_CHAT = "@MAMBA_GENUINE_SERVICES"  # Replace with your support chat link
 telever = "12.0.0"  # Replace with actual library version if available
 tlhver = "1.23"  # Replace with actual telethon version
@@ -209,7 +209,7 @@ def help_command(update: Update, context: CallbackContext) -> None:
     update.message.reply_text(help_text)
     
 def main():
-    updater = Updater("7038072037:AAHiWpuqQV1yfSbmZjFzKM5BHLBLP2UTqDo", use_context=True)
+    updater = Updater("6904434566:AAHgz6aHitWgn4q6KcZfD1Y48tIqA7wBRCc", use_context=True)
     dispatcher = updater.dispatcher
 
     # Conversation handler for registration
