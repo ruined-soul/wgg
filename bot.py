@@ -71,11 +71,11 @@ def criminal_username_handler(update: Update, context: CallbackContext) -> int:
 def criminal_id_handler(update: Update, context: CallbackContext) -> int:
     criminal_id = update.message.text.strip()
 
-if criminal_id.lower() == 'id not available':
+    if criminal_id.lower() == 'id not available':
         context.user_data['criminal_id'] = criminal_id
         update.message.reply_text("Criminal ID not available! Now send me the group username or link.")
         return GROUP
-elif criminal_id.isdigit():
+    elif criminal_id.isdigit():
         context.user_data['criminal_id'] = criminal_id
         update.message.reply_text("Criminal ID accepted! Now send me the group username or link.")
         return GROUP
